@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtdanhmuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã danh mục hoặc tên sản phẩm"
+        android:layout_margin="16dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnXemSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtdanhmuc"
+        android:layout_centerHorizontal="true"
+        android:text="XEM SẢN PHẨM"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnXemSanPham"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvKetQua"
+        android:visibility="gone"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tvKhongTimThay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvKetQua"
+        android:layout_centerHorizontal="true"
+        android:text="Không tìm thấy sản phẩm nào."
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
